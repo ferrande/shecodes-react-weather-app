@@ -1,0 +1,157 @@
+:root {
+  --background: #ffffff;
+
+  --border-softer: #cfd3d9;
+  --border-accent: #b3b3b3;
+
+  --main-colour: #616971;
+  --softer-colour: #919ca9;
+  --accent-colour: #ffba2f;
+
+  --box-shadow: #f5f7fa;
+}
+
+.App {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  color: var(--main-colour);
+}
+
+div.container {
+  background: var(--background);
+  width: 70%;
+  border: 2px solid var(--border-accent);
+  border-radius: 30px;
+  padding: 1em;
+  margin: 4em auto 1rem;
+  box-shadow: 0px 5px 10px 0px var(--box-shadow);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 27%;
+  left: 15%;
+  color: var(--softer-colour);
+}
+
+button {
+  position: absolute;
+  top: 27%;
+  left: 15%;
+  background: none;
+  border: none;
+  padding: 12px;
+}
+
+.form span {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid var(--border-softer);
+}
+
+.form-input {
+  font-size: 1.25rem;
+  margin: 0 auto;
+  width: 80%;
+  height: 55px;
+  text-indent: 33px;
+  border: 2px solid var(--border-accent);
+  border-radius: 10px;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p.current-weather {
+  height: 90px;
+  margin: 0 auto;
+}
+
+img {
+  width: 3em;
+  margin: 0.5em 0;
+}
+
+img.current-weather-image {
+  position: relative;
+  top: -20px;
+}
+
+.current-weather-number {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.metric,
+.dot {
+  position: relative;
+  right: -0.3em;
+  top: -25px;
+  font-size: 1.5rem;
+}
+
+.metric:hover {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-colour);
+  cursor: pointer;
+}
+
+.metric-active {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-colour);
+}
+
+.current-weather-description {
+  margin: 0 0 5em;
+}
+
+.wind-humidity {
+  padding: 1rem 5rem 0 0;
+  text-align: end;
+}
+
+li {
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+.five-day-forecasts {
+  margin: 10rem auto 0;
+}
+
+.five-day-forecast {
+  text-align: center;
+}
+
+.highest-temperature {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-colour);
+}
