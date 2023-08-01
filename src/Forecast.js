@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import SearchForm from "./SearchForm";
 import FiveDaysForecast from "./FiveDaysForecast";
 
-import brokenClouds from "./assets/broken-clouds.png";
-import clear from "./assets/clear.png";
 import fewClouds from "./assets/few-clouds.png";
-import mist from "./assets/mist.png";
-import rainy from "./assets/rainy.png";
-import scatteredClouds from "./assets/scattered-clouds.png";
-import showerRain from "./assets/shower-rain.png";
-import snow from "./assets/snow.png";
-import thunderstorm from "./assets/thunderstorm.png";
 
 function Forecast() {
   const [currentCity, setCurrentCity] = useState("Sao Paulo");
