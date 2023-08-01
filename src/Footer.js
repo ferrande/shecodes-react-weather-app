@@ -15,7 +15,7 @@ function Footer() {
                 Saepul Nahwan
             </a>
             <p>
-                <a href="/">Source code</a>
+                <a href="https://github.com/ferrande/shecodes-react-weather-app">Source code</a>
             </p>
         </footer>
     );
