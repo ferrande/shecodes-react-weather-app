@@ -1,14 +1,14 @@
 :root {
-  --background: #ffffff;
+  --background: #e6f2ff;
 
   --border-softer: #cfd3d9;
-  --border-accent: #b3b3b3;
+  --border-accent: #e6f2ff;
 
-  --main-colour: #616971;
-  --softer-colour: #919ca9;
+  --main-colour: #5b6570;
+  --softer-colour: #8895a3;
   --accent-colour: #ffba2f;
 
-  --box-shadow: #f5f7fa;
+  --box-shadow: #d5e3f5;
 }
 
 .App {
@@ -39,7 +39,7 @@ h1 {
 .form .fa-search {
   position: absolute;
   top: 27%;
-  left: 15%;
+  left: 14.5%;
   color: var(--softer-colour);
 }
 
@@ -138,8 +138,12 @@ li {
   margin: 10rem auto 0;
 }
 
-.five-day-forecast {
+.five-day-forecast-card {
   text-align: center;
+  margin: 0 1rem;
+  border-radius: 16px;
+  background: #fbfeff;
+  box-shadow: 0px 5px 10px 0px var(--box-shadow);
 }
 
 .highest-temperature {

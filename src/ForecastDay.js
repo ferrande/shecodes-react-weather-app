@@ -4,14 +4,14 @@ import rainy from "./assets/rainy.png";
 
 function ForecastDay() {
     return (
-        <p className="five-day-forecast col">
+        <div className="five-day-forecast-card col">
             fri
             <br />
             <img src={rainy} alt="rainy" />
             <br />
             21º
             <span className="highest-temperature">31º</span>
-        </p>
+        </div>
     );
 }
 
