@@ -1,6 +1,6 @@
 import React from "react";
 
-import rainy from "./assets/rainy.png";
+import rainy from "../assets/rainy.png";
 
 function ForecastDay() {
     return (

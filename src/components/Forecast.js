@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import SearchForm from "./SearchForm";
 import FiveDaysForecast from "./FiveDaysForecast";
 
-import fewClouds from "./assets/few-clouds.png";
+import fewClouds from "../assets/few-clouds.png";
 
 function Forecast() {
   const [currentCity, setCurrentCity] = useState("Sao Paulo");

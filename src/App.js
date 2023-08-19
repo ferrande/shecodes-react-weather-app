@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "./styles.css";
+import "./styles/styles.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import Footer from "./Footer";
-import Forecast from "./Forecast";
+import Footer from "./components/Footer";
+import Forecast from "./components/Forecast";
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <Forecast />
@@ -13,3 +13,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
