@@ -4,8 +4,8 @@
   --border-softer: #cfd3d9;
   --border-accent: #e6f2ff;
 
-  --main-colour: #5b6570;
-  --softer-colour: #8895a3;
+  --main-colour: #101a24;
+  --softer-colour: #a6c1d0;
   --accent-colour: #ffba2f;
 
   --box-shadow: #d5e3f5;
@@ -17,7 +17,7 @@
   color: var(--main-colour);
 }
 
-div.container {
+body.container {
   background: var(--background);
   width: 70%;
   border: 2px solid var(--border-accent);

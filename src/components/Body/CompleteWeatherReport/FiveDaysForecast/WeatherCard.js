@@ -1,8 +1,8 @@
 import React from "react";
 
-import rainy from "../assets/rainy.png";
+import rainy from "../../assets/rainy.png";
 
-function ForecastDay() {
+function WeatherCard() {
     return (
         <div className="five-day-forecast-card col">
             fri
@@ -15,4 +15,4 @@ function ForecastDay() {
     );
 }
 
-export default ForecastDay;
+export default WeatherCard;
