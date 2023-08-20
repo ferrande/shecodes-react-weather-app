@@ -5,10 +5,10 @@ function CurrentLocationInfo() {
 
     return (
         <div>
-            <h1 id="currentCity" className="col current-city">
+            <h1>
                 {currentCity}
             </h1>
-            <h2 id="currentDate" className="current-date">
+            <h2>
                 <span id="currentDay">tue</span> <span id="currentHour">01</span>:
                 <span id="currentMinutes">00</span>
             </h2>

@@ -3,13 +3,13 @@ import React from "react";
 function CurrentStats() {
     return (
         <div>
-            <p className="wind-humidity">
+            <p className="wind-humidity text-center">
                 <ul>
                     <li>
-                        wind: <span id="wind"></span> km/h
+                        wind: <span>4</span> km/h
                     </li>
                     <li>
-                        humidity: <span id="humidity"></span>%
+                        humidity: <span>55</span>%
                     </li>
                 </ul>
             </p>

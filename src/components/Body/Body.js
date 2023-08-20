@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import SearchForm from "./SearchForm/SearchForm";
-import CompleteWeatherReport from "../CompleteWeatherReport/CompleteWeatherReport";
+import CompleteWeatherReport from "./CompleteWeatherReport/CompleteWeatherReport";
 
 function Body() {
     const [currentCity, setCurrentCity] = useState("Sao Paulo");
@@ -12,7 +12,7 @@ function Body() {
         setTemperature(11);
     }
     return (
-        <body className="container">
+        <body className="body-container">
             <SearchForm handleSearch={handleCitySearch} />
             <CompleteWeatherReport />
         </body>

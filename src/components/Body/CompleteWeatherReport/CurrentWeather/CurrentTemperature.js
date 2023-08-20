@@ -1,31 +1,31 @@
 import React, { useState } from "react";
 
-import fewClouds from "../../assets/few-clouds.png";
+import fewClouds from "../../../../assets/few-clouds.png";
 
 function CurrentTemperature() {
     const [temperature, setTemperature] = useState(21);
 
     return (
-        <div className="col-md-8">
-            <p className="current-weather">
+        <div>
+            <div className="current-weather d-flex justify-content-center">
                 <img
                     src={fewClouds}
                     alt="rainy"
-                    className="current-weather-image"
+                    className="current-weather-image align-self-center"
                     id="icon"
                 />
-                <span id="weatherNumber" className="current-weather-number">
+                <span className="current-weather-number align-self-center">
                     {temperature}
                 </span>
-                <span id="celsius" className="metric">
+                <span id="celsius" className="metric align-self-center">
                     ºC
                 </span>
-                <span className="dot">・</span>
-                <span id="fahrenheit" className="metric">
+                <span className="dot align-self-center">・</span>
+                <span id="fahrenheit" className="metric align-self-center">
                     ºF
                 </span>
-            </p>
-            <p id="currentWeatherDescription">partly cloudy</p>
+            </div>
+            <p className="current-weather-description">partly cloudy</p>
         </div>
     )
 }
