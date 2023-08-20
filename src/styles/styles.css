@@ -1,22 +1,23 @@
 :root {
-  --background: #e6f2ff;
+  --primary-main: #ffeff6;
+  --primary-dark: #ffd3e4;
 
-  --border-softer: #cfd3d9;
-  --border-accent: #e6f2ff;
+  --secondary-main: #ffa2be;
+  --secondary-dark: #ff6493;
+  --secondary-darker: #d2004a;
+  
+  --font-colour: #001346;
 
-  --main-colour: #101a24;
-  --softer-colour: #cde5ff;
-  --accent-colour: #ffba2f;
+  --white: #fffefe;
 
-  --box-shadow: #d5e3f5;
-
-  --white: #ffffff
+  background-color: var(--primary-dark);
 }
 
 .App {
+  background-color: var(--primary-dark);
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
-  color: var(--main-colour);
+  color: var(--font-colour);
 }
 
 body.body-container {
@@ -24,11 +25,11 @@ body.body-container {
   margin: 4rem auto 1rem;
   padding: 1rem;
 
-  background: var(--background);
+  color: var(--font-colour);
 
-  box-shadow: 0px 5px 10px 0px var(--box-shadow);
+  background: var(--primary-main);
 
-  border: 2px solid var(--border-accent);
+  border: 2px solid var(--primary-main);
   border-radius: 30px;
 }
 
@@ -51,15 +52,20 @@ body.body-container {
   height: 55px;
 
   font-size: 1.25rem;
+  font-weight: 500;
 
-  background-color: var(--softer-colour);
-  border: 2px solid var(--softer-colour);
+  background-color: var(--secondary-main);
+  border: 2px solid var(--secondary-main);
   border-radius: 0 10px 10px 0;
+
+  color: var(--font-colour);
 }
 
 .btn:hover {
-  background-color: var(--accent-colour);
-  border: 2px solid var(--accent-colour);
+  background-color: var(--secondary-dark);
+  border: 2px solid var(--secondary-dark);
+
+  color: var(--font-colour);
 }
 
 h1 {
@@ -98,14 +104,14 @@ img.current-weather-image {
 
 .metric:hover {
   font-weight: 500;
-  color: var(--accent-colour);
+  color: var(--secondary-dark);
 
   cursor: pointer;
 }
 
 .metric-active {
   font-weight: 500;
-  color: var(--accent-colour);
+  color: var(--secondary-dark);
 }
 
 .current-weather-description {
@@ -131,8 +137,7 @@ li {
   padding: 10px;
   font-size: 1.15rem;
   text-align: center;
-  background: #fbfeff;
-  box-shadow: 0px 5px 10px 0px var(--box-shadow);
+  background: var(--white);
   border-radius: 16px;
 }
 
@@ -151,6 +156,11 @@ footer {
 }
 
 a {
-  color: var(--accent-colour);
+  color: var(--secondary-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-darker);
   text-decoration: none;
 }
