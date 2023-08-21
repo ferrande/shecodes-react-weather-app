@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function CurrentLocationInfo() {
-    const [currentCity, setCurrentCity] = useState("Sao Paulo");
+    const [currentCity, setCurrentCity] = useState("Nagoya");
 
     return (
         <div>
