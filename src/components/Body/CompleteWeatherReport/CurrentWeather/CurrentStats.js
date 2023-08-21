@@ -1,15 +1,15 @@
 import React from "react";
 
-function CurrentStats() {
+function CurrentStats({ wind, humidity }) {
     return (
         <div>
-            <p className="wind-humidity text-center">
+            <p className="text-center">
                 <ul>
                     <li>
-                        wind: <span>4</span> km/h
+                        wind: <span>{Math.round(wind)}</span> km/h
                     </li>
                     <li>
-                        humidity: <span>55</span>%
+                        humidity: <span>{Math.round(humidity)}</span>%
                     </li>
                 </ul>
             </p>

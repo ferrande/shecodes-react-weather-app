@@ -6,7 +6,7 @@ import CurrentWeather from "./CurrentWeather/CurrentWeather";
 function CompleteWeatherReport() {
   return (
     <div>
-      <CurrentWeather />
+      <CurrentWeather defaultCity="Sydney" />
       <FiveDaysForecast />
     </div>
   );

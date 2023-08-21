@@ -1,21 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
 import fewClouds from "../../../../assets/few-clouds.png";
 
-function CurrentTemperature() {
-    const [temperature, setTemperature] = useState(21);
-
+function CurrentTemperature({ temperature, description }) {
     return (
         <div>
             <div className="current-weather d-flex justify-content-center">
                 <img
                     src={fewClouds}
-                    alt="rainy"
+                    alt={description}
                     className="current-weather-image align-self-center"
                     id="icon"
                 />
                 <span className="current-weather-number align-self-center">
-                    {temperature}
+                    {Math.round(temperature)}
                 </span>
                 <span id="celsius" className="metric align-self-center">
                     ºC
@@ -25,7 +23,7 @@ function CurrentTemperature() {
                     ºF
                 </span>
             </div>
-            <p className="current-weather-description">partly cloudy</p>
+            <p className="current-weather-description">{description}</p>
         </div>
     )
 }

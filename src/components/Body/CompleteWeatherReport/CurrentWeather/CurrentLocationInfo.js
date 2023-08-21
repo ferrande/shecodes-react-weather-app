@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
-function CurrentLocationInfo() {
-    const [currentCity, setCurrentCity] = useState("Nagoya");
-
+function CurrentLocationInfo({ city }) {
     return (
         <div>
             <h1>
-                {currentCity}
+                {city}
             </h1>
             <h2>
                 <span id="currentDay">tue</span> <span id="currentHour">01</span>:
