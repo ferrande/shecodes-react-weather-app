@@ -131,6 +131,10 @@ li {
   list-style-type: none;
 }
 
+.stats {
+  font-weight: 700;
+}
+
 .five-days-forecast {
   margin: 3rem auto 0;
 }

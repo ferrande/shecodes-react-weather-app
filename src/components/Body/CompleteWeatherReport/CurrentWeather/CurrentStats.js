@@ -5,10 +5,10 @@ function CurrentStats({ wind, humidity }) {
         <div className="text-center">
             <ul>
                 <li>
-                    <strong>wind:</strong> <span>{Math.round(wind)}</span> km/h
+                    <span className="stats">wind:</span> <span>{Math.round(wind)}</span> km/h
                 </li>
                 <li>
-                    <strong>humidity:</strong> <span>{Math.round(humidity)}</span>%
+                    <span className="stats">humidity:</span> <span>{Math.round(humidity)}</span>%
                 </li>
             </ul>
         </div>
