@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import "../../../styles/styles.css";
+import "../../../../styles/styles.css";
 
-function SearchForm({ handleSearch }) {
-    const [city, setCity] = useState("");
+function SearchForm({ handleSearch, defaultCity }) {
+    const [city, setCity] = useState(defaultCity);
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -21,6 +21,7 @@ function SearchForm({ handleSearch }) {
                     type="search"
                     className="form-control"
                     placeholder="Search for a city..."
+                    value={city}
                     onChange={updateCity}
                 />
                 <div className="input-group-append">

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-import CurrentLocationInfo from "./CurrentLocationInfo";
-import CurrentTemperature from "./CurrentTemperature";
-import CurrentStats from "./CurrentStats";
+import CurrentLocationInfo from "./WeatherInfo/CurrentLocationInfo";
+import CurrentTemperature from "./WeatherInfo/CurrentTemperature"
+import CurrentStats from "./WeatherInfo/CurrentStats";
 
 
-function CurrentWeather(props) {
+function CurrentWeather() {
     const [weatherData, setWeatherData] = useState({ loaded: false })
 
     function handleSubmit(response) {
@@ -34,7 +34,7 @@ function CurrentWeather(props) {
         )
     } else {
         const apiKey = "9e0fb79c2f66d0cd0dcf06710976a873";
-        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
         axios.get(apiUrl).then(handleSubmit)
 
         return (<h1>Loading...</h1>)

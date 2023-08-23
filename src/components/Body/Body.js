@@ -1,6 +1,6 @@
 import React from "react";
 
-import SearchForm from "./SearchForm/SearchForm";
+import SearchForm from "./CompleteWeatherReport/SearchForm/SearchForm";
 import CompleteWeatherReport from "./CompleteWeatherReport/CompleteWeatherReport";
 
 function Body() {

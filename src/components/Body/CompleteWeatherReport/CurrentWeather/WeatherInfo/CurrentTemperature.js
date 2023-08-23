@@ -1,6 +1,6 @@
 import React from "react";
 
-import fewClouds from "../../../../assets/few-clouds.png";
+import fewClouds from "../../../../../assets/few-clouds.png";
 
 function CurrentTemperature({ temperature, description }) {
     return (

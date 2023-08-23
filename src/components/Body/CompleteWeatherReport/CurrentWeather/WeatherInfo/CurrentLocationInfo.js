@@ -1,6 +1,6 @@
 import React from "react";
 
-import FormattedDate from "./FormattedDate";
+import FormattedDate from "./FormattedDate/FormattedDate";
 
 function CurrentLocationInfo({ city, weatherData }) {
     return (
