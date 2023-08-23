@@ -20,7 +20,7 @@
   color: var(--font-colour);
 }
 
-body.body-container {
+div.body-container {
   width: 50%;
   margin: 4rem auto 1rem;
   padding: 1rem;
@@ -71,7 +71,7 @@ body.body-container {
 }
 
 h1 {
-  margin: 3rem 0 0 0;
+  margin: 3rem 0 0.25rem 0;
 
   font-size: 2rem;
   font-weight: 700;

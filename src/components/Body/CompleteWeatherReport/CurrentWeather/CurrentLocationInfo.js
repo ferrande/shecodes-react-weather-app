@@ -1,15 +1,14 @@
 import React from "react";
 
-function CurrentLocationInfo({ city }) {
+import FormattedDate from "./FormattedDate";
+
+function CurrentLocationInfo({ city, weatherData }) {
     return (
         <div>
             <h1>
                 {city}
             </h1>
-            <h2>
-                <span id="currentDay">tue</span> <span id="currentHour">01</span>:
-                <span id="currentMinutes">00</span>
-            </h2>
+            <FormattedDate date={weatherData.date} />
         </div>
     )
 }

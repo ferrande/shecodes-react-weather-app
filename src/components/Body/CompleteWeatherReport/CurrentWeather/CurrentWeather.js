@@ -5,16 +5,18 @@ import CurrentLocationInfo from "./CurrentLocationInfo";
 import CurrentTemperature from "./CurrentTemperature";
 import CurrentStats from "./CurrentStats";
 
+
 function CurrentWeather(props) {
     const [weatherData, setWeatherData] = useState({ loaded: false })
 
     function handleSubmit(response) {
-        const windKmH = response.data.wind.speed * 3.6
-        console.log(response.data);
+        const formattedDate = new Date(response.data.dt * 1000);
+        const windKmH = response.data.wind.speed * 3.6;
 
         setWeatherData({
             loaded: true,
             city: response.data.name,
+            date: formattedDate,
             temperature: response.data.main.temp,
             description: response.data.weather[0].description,
             wind: windKmH,
@@ -25,7 +27,7 @@ function CurrentWeather(props) {
     if (weatherData.loaded) {
         return (
             <div>
-                <CurrentLocationInfo city={weatherData.city} />
+                <CurrentLocationInfo city={weatherData.city} weatherData={weatherData} />
                 <CurrentTemperature temperature={weatherData.temperature} description={weatherData.description} />
                 <CurrentStats wind={weatherData.wind} humidity={weatherData.humidity} />
             </div>

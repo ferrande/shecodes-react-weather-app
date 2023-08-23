@@ -9,10 +9,10 @@ function Body() {
         console.log("searching...")
     }
     return (
-        <body className="body-container">
+        <div className="body-container">
             <SearchForm handleSearch={handleCitySearch} />
             <CompleteWeatherReport />
-        </body>
+        </div>
     );
 }
 
