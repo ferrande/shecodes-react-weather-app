@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-import FiveDaysForecast from "./FiveDaysForecast/FiveDaysForecast";
+import SearchForm from "./SearchForm/SearchForm";
 import CurrentWeather from "./CurrentWeather/CurrentWeather";
+import FiveDaysForecast from "./FiveDaysForecast/FiveDaysForecast";
 
 function CompleteWeatherReport() {
+  const [selectedCity, setSelectedCity] = useState("Sydney");
+
+  function handleCitySearch(newCity) {
+    setSelectedCity(newCity);
+  }
+
   return (
     <div>
-      <CurrentWeather defaultCity="Sydney" />
+      <SearchForm handleSearch={handleCitySearch} />
+      <CurrentWeather city={selectedCity} />
       <FiveDaysForecast />
     </div>
   );

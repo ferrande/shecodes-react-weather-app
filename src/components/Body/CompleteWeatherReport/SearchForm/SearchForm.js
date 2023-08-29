@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 import "../../../../styles/styles.css";
 
-function SearchForm({ handleSearch, defaultCity }) {
-    const [city, setCity] = useState(defaultCity);
+function SearchForm({ handleSearch }) {
+    const [city, setCity] = useState("");
 
     function handleSubmit(event) {
         event.preventDefault();
-        handleSearch(city);
+        handleSearch(city.toLowerCase());
     }
 
     function updateCity(event) {
