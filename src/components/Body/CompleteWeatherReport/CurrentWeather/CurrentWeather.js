@@ -13,6 +13,7 @@ function CurrentWeather({ city }) {
     useEffect(() => {
         const apiKey = "9e0fb79c2f66d0cd0dcf06710976a873";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
         axios
             .get(apiUrl)
             .then((response) => {
@@ -23,6 +24,7 @@ function CurrentWeather({ city }) {
                     loaded: true,
                     city: response.data.name,
                     date: formattedDate,
+                    icon: response.data.weather[0].icon,
                     temperature: response.data.main.temp,
                     description: response.data.weather[0].description,
                     wind: windKmH,
@@ -37,15 +39,19 @@ function CurrentWeather({ city }) {
     }, [city]);
 
     if (error) {
-        return (<div><h1>{error}</h1>
-            <h2>Try searching for a different location :)</h2></div>);
+        return (
+            <div>
+                <h1>{error}</h1>
+                <h2>Try searching for a different location :)</h2>
+            </div>
+        );
     }
 
     if (weatherData.loaded) {
         return (
             <div>
                 <CurrentLocationInfo city={weatherData.city} weatherData={weatherData} />
-                <CurrentTemperature temperature={weatherData.temperature} description={weatherData.description} />
+                <CurrentTemperature temperature={weatherData.temperature} description={weatherData.description} weatherData={weatherData} />
                 <CurrentStats wind={weatherData.wind} humidity={weatherData.humidity} />
             </div>
         )

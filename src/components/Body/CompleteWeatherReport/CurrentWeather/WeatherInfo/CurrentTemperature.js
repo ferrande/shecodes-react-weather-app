@@ -1,17 +1,12 @@
 import React from "react";
 
-import fewClouds from "../../../../../assets/few-clouds.png";
+import WeatherIcon from "../../../WeatherIcon";
 
-function CurrentTemperature({ temperature, description }) {
+function CurrentTemperature({ temperature, description, weatherData }) {
     return (
         <div>
             <div className="current-weather d-flex justify-content-center">
-                <img
-                    src={fewClouds}
-                    alt={description}
-                    className="current-weather-image align-self-center"
-                    id="icon"
-                />
+                <WeatherIcon code={weatherData.icon} />
                 <span className="current-weather-number align-self-center">
                     {Math.round(temperature)}
                 </span>
