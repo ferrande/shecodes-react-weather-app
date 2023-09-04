@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import SearchForm from "./SearchForm/SearchForm";
 import CurrentWeather from "./CurrentWeather/CurrentWeather";
-import FiveDaysForecast from "./FiveDaysForecast/FiveDaysForecast";
+// import FiveDaysForecast from "./FiveDaysForecast/FiveDaysForecast";
 
 function CompleteWeatherReport() {
   const [selectedCity, setSelectedCity] = useState("Sydney");
@@ -15,7 +15,7 @@ function CompleteWeatherReport() {
     <div>
       <SearchForm handleSearch={handleCitySearch} />
       <CurrentWeather city={selectedCity} />
-      <FiveDaysForecast />
+      {/* <FiveDaysForecast /> */}
     </div>
   );
 }
